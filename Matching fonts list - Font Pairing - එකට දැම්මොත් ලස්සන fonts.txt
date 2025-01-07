@@ -1,0 +1,12 @@
+Here are some matching fonts.
+
+Font for Heading | Font for Paragraph
+Georgia | Verdana
+Helvetica | Garamond
+Merriweather | Open Sans
+Ubuntu | Lora
+Abril Fatface | Poppins
+Cinzel | Fauna One
+
+
+More: https://www.w3schools.com/css/css_font_pairings.asp
