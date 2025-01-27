@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Himal Erangana">
+    <meta name="description" content="How to center an Image horizontally and Vertically, CSS">
+    <meta name="keywords" content="HTML, CSS, Center an Image, Horizontally, Vertically">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>How to center an Image using CSS</title>
+    <style>
+        body{
+            box-sizing:border-box;
+            height: 100vh;
+        }
+        img{
+            max-width: 500px;
+            height: auto;
+        }
+        div.imgholder{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Below image is center'ed in it's parent <code style="color: rgba(0, 0, 172, 0.938);padding:2px;background-color:#999999c9;border-radius: 5px;">&lt;div&gt;</code><div>
+    <div class="imgholder">
+        <img id="image" src="https://www.usatoday.com/gcdn/presto/2019/09/24/USAT/416468fc-ab42-4613-8dea-25df417edc9f-sierra.jpg" alt="Centered Image">
+    </div>
+</body>
+</html>
