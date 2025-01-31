@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Himal Erangana">
+    <meta name="description" content="Responsive Web Design Media Queries">
+    <meta name="keywords" content="HTML, CSS, RWD, Media Queries">
+    <title>RWD Media Queries - Example</title>
+    <style>
+    :root {
+        --color-one: #ff0000;
+        --color-two: #00ff00;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend+Giga:wght@100..900&display=swap');
+    * {
+        box-sizing: border-box;
+    }    
+    .lexend-giga-normal {
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    }
+    #logo {
+        font-size: 7rem;
+        text-align: center;
+        padding: 1rem;
+        color: #777;
+        width:100%;
+        background-color: azure;
+    }
+    .lexend-giga-normal > a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .col-1 {width:calc(100%/12);}
+    .col-2 {width:calc(2*100%/12);}
+    .col-3 {width:calc(3*100%/12);}
+    .col-4 {width:calc(4*100%/12);}
+    .col-5 {width:calc(5*100%/12);}
+    .col-6 {width:calc(6*100%/12);}
+    .col-7 {width:calc(7*100%/12);}
+    .col-8 {width:calc(8*100%/12);}
+    .col-9 {width:calc(9*100%/12);}
+    .col-10 {width:calc(10*100%/12);}
+    .col-11 {width:calc(11*100%/12);}
+    .col-12 {width:100%;}
+    div#mtitle {
+        font-size:5rem;
+        border-bottom: 3px solid #777;
+    }
+    section {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #ad-bar > p {
+        background-image: url("https://static.wikia.nocookie.net/theodd1souts/images/e/ee/Odd_alphabet.jpg/");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    footer > div {background-color: linear-gradient(45deg, var(--color-one), var(--color-two));}
+    #cont {
+        display:flex;
+    }
+    [class*="col-"] {
+        flex-direction: row;
+    }
+    #main {
+        padding: 12px;
+    }
+    #navlist {
+        list-style: none;
+        width: 100%;
+    }
+    #navlist > li {
+        padding: 10px;
+        text-align: center;
+        background-color: #41b100;
+        color: white;
+        border-bottom: 1px solid #ccc;
+    }
+    #navlist > li {
+        text-decoration: none;
+        color: inherit;
+    }
+    #navlist > li > a {
+        text-decoration: none;
+        color: inherit;
+    }
+    #navlist li:hover:not(.active) {
+        background-color: #00ffea;
+        color: black;
+    }
+    @media screen and (max-width: 768px) {
+        #cont{flex-direction: column;}
+        .col-6, .col-2, .col-4 {width:100%;}
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="lexend-giga-normal" id="logo"><a href="#">Logo</a></div>
+    </header>
+    <section id="cont">
+        <div id="navbar" class="col-2">
+            <ul id="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="main" class="col-6">
+            <div id="mtitle">About Us...</div>
+            <div id="mcontent">
+                <p>Welcome to InnovateTech Solutions – your partner in turning bold ideas into reality. Founded in 2020, we’re a dynamic team of dreamers, thinkers, and problem-solvers dedicated to crafting cutting-edge technology solutions for businesses and communities worldwide. Whether it’s streamlining workflows, building immersive digital experiences, or solving complex challenges, we thrive on innovation that matters.</p>
+                <p>It all started in a small garage with two laptops, a whiteboard full of scribbles, and a shared belief that technology should empower people, not complicate their lives. What began as a passion project between co-founders Alex Morgan and Jamie Rivera has grown into a global company serving clients in over 15 countries. Today, we’re proud to be a trusted name in software development, AI solutions, and digital transformation – but we’ve never lost our scrappy, collaborative spirit.</p>
+            </div>
+        </div>
+        <div id="ad-bar" class="col-4">
+            <p style="display:block;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgba(0, 60, 255, 0.822);background-color: #999;min-height: 300px;">Your Ads Goes Here...</p>
+        </div>
+    </section>
+    <footer>
+        <div class="col-12" style="text-align: center;display:block;padding: 20px;border: 2px solid linear-gradient(45deg, --color-one, --color-two);">&copy; 2025 Himal Erangana. All rights reserved.</div>
+    </footer>
+</body>
+</html>
