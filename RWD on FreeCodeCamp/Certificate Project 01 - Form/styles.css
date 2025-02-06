@@ -1,0 +1,245 @@
+* {box-sizing: border-box;}
+
+@font-face {
+    font-family: "Dena";
+    src: url("/Dena.otf") format("opentype");
+}
+
+:root {
+    --black1:#0f040081;
+    --black2:#1400087a;
+    --black3:#000d1379;
+    --black4: #000a087e;
+    --img: url('/bg-large.jpg');
+}
+
+.chakra-petch-regular {
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.doto-high {
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+}
+  
+
+html {
+    animation: back-anime 5s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(-45deg, var(--black1), var(--black2), var(--black3), var(--black4)), var(--img);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-size: 400% 400%, cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+@keyframes back-anime {
+    0% {
+        background-position: 0% 50%,center;
+    }
+    50% {
+        background-position: 100% 50%,center;
+    }
+    100% {
+        background-position: 0% 50%,center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    :root {
+        --img:url('/bg-small.jpg');   
+    }
+}
+
+#headcontainer > p, #headcontainer > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headcontainer > h1 {
+    border-bottom: 10px double #9F9F9F;
+    font-size: 5em;
+}
+
+#headcontainer > p, #headcontainer > span {
+    font-size: 2em;
+}
+
+#headcontainer > span {
+    font-family: "Dena";
+}
+
+#headcontainer {
+    text-align: center;
+    color: #fff;
+}
+
+.highlight {
+    color:inherit;
+    font-weight: bold;
+    display: inline-block;
+    font-variant: small-caps;
+}
+
+.oneline {
+    display: inline-block;
+}
+
+#footercontainer > p > i {
+    color: unset;
+}
+
+#footercontainer {
+    position:absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    font-family:  "Dena",Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffff9f;
+    font-size: 0.8em;
+    background-color: #000000d7;
+}
+
+form > fieldset {
+    border:none;
+}
+
+a {text-decoration: none;}
+
+main {
+    background: rgba(0, 0, 0, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 1em;
+    margin: 5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffff8f;
+}
+
+#fieldtxt {
+    color: azure;
+    border-left: 10px double #ffba9f;
+    padding-left: 15px;
+}
+
+#fieldtxt::after {
+    content: "";
+    display: block;
+    margin:12px 0;
+}
+
+select, input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="number"], textarea {
+    /* Remove default styling...*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* ...and add custom styling */
+    display: block;
+    background-color: #0000004f;
+    border:0 0 4px 0 solid #1f1f1f;
+    color: rgba(2555,255,255,1.0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label::after {
+    content: "";
+    display: block;
+    margin: 12px 0;
+}
+
+textarea, input:not([type="number"]), input:not([type="checkbo"]), input:not([type="radio"]) {
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 25%;
+}
+
+@media screen and (max-width: 640px) {
+    input[type="number"] {
+        width: 100%;
+    }
+    main {
+        font-size: 1em;
+    }
+}
+
+label.inline1 {
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+}
+
+label:not(.inline1)::after {
+    content: "";
+    display: block;
+    margin: 0 0 2px 0;
+}
+
+input[type="radio"],input[type="checkbox"] {
+    padding: none;
+    background-color: #1f1f1f;
+}
+
+footer::before {
+    content: " ";
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #ffba9f;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff8f63d0;
+    color: #000000da;
+}
+
+input[type="submit"]::before, input[type="checkbox"]::after, input[type="radio"]::after {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 100%;
+}
+
+#agree-label {
+    display: block;
+    text-align: center;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: min-content;
+}
+
+/* I couldn't get the checkboxes and radio buttons into the same lines as their labels. Please help me with this. */
