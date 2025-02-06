@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Dena";
-    src: url("/Dena.otf") format("opentype");
+    src: url("Dena.otf") format("opentype");
 }
 
 :root {
@@ -10,7 +10,7 @@
     --black2:#1400087a;
     --black3:#000d1379;
     --black4: #000a087e;
-    --img: url('/bg-large.jpg');
+    --img: url('bg-large.jpg');
 }
 
 .chakra-petch-regular {
@@ -58,7 +58,7 @@ html {
 
 @media screen and (max-width: 640px) {
     :root {
-        --img:url('/bg-small.jpg');   
+        --img:url('bg-small.jpg');   
     }
 }
 
