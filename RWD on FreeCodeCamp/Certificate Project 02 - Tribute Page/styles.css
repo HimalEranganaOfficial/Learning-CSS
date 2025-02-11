@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color:azure;
+    animation: bganime 4s ease-in-out infinite;
+    background-size: 400% 400%, 100% 100%;
+    background-image: linear-gradient(-45deg, #0b0d177c, #111b4781, #4965a580, #2e86c181, #4c008280, #541d8b80, #7951a980, #5228887e, rgba(16, 255, 16, 0.507), #67001f7e, #80002080, #c4582d79, #e67d2285, #8b45137e, #a0512d7c, #ffd9007e, #ffc40088, #f8f8ff7e, #ffffff80, #ff69b47e, #ff00ff85), linear-gradient(-45deg, #0B0D17, #0B0D17);
+    background-repeat: no-repeat;
+}
+
+@keyframes bganime {
+    0% {
+        background-position: 0% 50%, center
+    }
+    50% {
+        background-position: 100% 50%, center;
+    }
+    100% {
+        background-position: 0% 50%, center;
+    }
+}
+
+a, a:hover, a:visited {
+    color: gold;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: 2px wavy inherit;
+}
+
+main {
+    display:block;
+    position: relative;
+    margin: 35px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #222831;
+    width: 97.5%;
+}
+
+#image {
+    display: block;
+    margin:15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.678);
+    width: 100%;
+}
+
+.doto-text {
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+}
+
+#imgcontainer-psudo {
+    width: 85%;
+    max-width: 85%;
+}
+
+.toptext {
+    display: block;
+    margin:auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+.toptext > p {
+    margin-top: -10px;
+    font-variant: small-caps;
+}
+
+#img-div {
+    display: flex;
+    background-color: #4d4e50;
+    padding: 15px 5px;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#img-caption {
+    text-align: center;
+    padding-top: -5px;
+    margin: -5px auto;
+    max-width: 85%;
+}
+
+#tribute-info {
+    display: flex;
+    padding: 15px;
+    background-color: inherit;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.special {
+    font-style: oblique;
+}
+
+#quote {
+    display: block;
+    text-align: center;
+    background-color: #b4b6c0;
+    color: #0B0D17;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2px double gold;
+    border-radius: 10px;
+    min-width: 80%;
+}
+
+#actual-quote {
+    font-variant:unset;
+    font-stretch: extra-expanded;
+    color: inherit;
+    text-shadow: 0px 0px 2px gold;
+}
+
+#acutal-quote::first-letter {
+    font-size: 20em;
+}
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+.quote pre {
+    font-size: 0.5em;
+}
+
+#tribute-info > ul > li::after {
+    content:" ";
+    margin: 1% auto;
+    display: block;
+}
