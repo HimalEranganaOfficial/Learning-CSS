@@ -13,17 +13,17 @@
     <!--Here Goes The Temp. Font Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&family=JetBrains+Mono:wght@300&family=Squada+One&display=swap" rel="stylesheet">
     <!--End of font links... Clear them after production-->
 </head>
 <body>
     <nav id="navbar">
         <header>
-            <div class="Logo" id="headerlogo">
-                <img src="/images/logo-large.jpg" alt="PPU Logo" id="logoimg">
-                <div id="logotext" class="squada-one-regular">Python Package Upgrader (PPU)</div>
+            <div class="Logo col-9" id="headerlogo">
+                <img src="/images/logo-large.jpg" class="inline" alt="PPU Logo" id="logoimg">
+                <div id="logotext" class="squada-one-regular inline">Python Package Upgrader (PPU)</div>
             </div>
-            <div id="actual-nav">
+            <div id="actual-nav" class="col-3">
                 <div class="navitems"><a rel="noopener" class="nav-link" href="#Introduction">Introduction</a></div>
                 <div class="navitems"><a rel="noopener" class="nav-link" href="#Prerequisites">Prerequisites</a></div>
                 <div class="navitems"><a rel="noopener" class="nav-link" href="#Installation_Guide">Installation Guide</a></div>
@@ -39,9 +39,9 @@
             </div>
         </header>
     </nav>
-    <main id="main-doc">
+    <main id="main-doc" class="col-9">
         <section id="Introduction" class="main-section">
-            <header><h1>Introduction</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Introduction</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader represents a significant advancement in Python package management, offering a graphical solution to a traditionally command-line driven process. This application bridges the gap between powerful package management capabilities and user-friendly interface design, making Python package maintenance accessible to developers of all experience levels.</p>
             <h2>What is Python Package Upgrader?</h2>
             <p>Python Package Upgrader is a sophisticated graphical user interface (GUI) application designed to streamline the management of Python packages. At its core, the application serves three essential functions: backing up existing packages, updating packages to their latest versions, and restoring packages from previous backups. This combination of features provides a robust safety net for Python developers while simplifying the package maintenance process.</p>
@@ -66,14 +66,14 @@
             </ul>
         </section>
         <section id="Prerequisites" class="main-section">
-            <header><h1>Prerequisites</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Prerequisites</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Before using Python Package Upgrader, it's important to understand the system requirements and background knowledge that will help you get the most out of the application. This section will guide you through everything you need to know before getting started.</p>
             <h2>System Requirements</h2>
             <h3>Operating System Compatibility</h3>
             <p>Python Package Upgrader has been developed and tested on Windows operating systems. While the application is primarily designed for Windows users, compatibility may vary across different versions and configurations. The application has been confirmed to work on:</p>
             <ul>
-                <li>Windows 10</li>
-                <li>Windows 11</li>
+                <li>Windows 10 <i class='bx bxl-windows bx-flip-vertical' style='color:#357ec7'></i></li>
+                <li>Windows 11 <img src="https://img.icons8.com/color/480/windows-11.png" alt="Windows 11 logo" id="win11logo" class="inline"/></li>
             </ul>
             <p>If you're using a different Windows version, the application may still work, but we recommend testing it in a controlled environment first. We welcome feedback about compatibility with other Windows versions to help improve our documentation and support.</p>
             <h3>Hardware Requirements</h3>
@@ -94,7 +94,7 @@
             <p>You don't need to be an expert in these areas - the application is designed to be user-friendly even for beginners. However, understanding these concepts will help you make better decisions when using the application.</p>
         </section>
         <section id="Installation_Guide" class="main-section">
-            <header><h1>Installation Guide</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Installation Guide</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader offers two installation methods: a simple Windows installer for most users, and source code installation for developers or users who want to examine and modify the code. This guide will walk you through both approaches, helping you choose and implement the best method for your needs.</p>
             <h2>Method 1: Windows Installer (Recommended for Most Users)</h2>
             <p>The Windows installer provides the easiest way to get started with Python Package Upgrader. This method automatically handles the installation process and creates necessary shortcuts for you.</p>
@@ -137,20 +137,20 @@
                 <li>Open a command prompt:
                     <ul>
                         <li>Just search for "Terminal", "CMD" or "PowerShell" in Windows 10/11 search-bar, and run one of them as administrator</li>
-                        <li>Or, Press <span class="inline code">Win + X</span> and select "Windows Terminal", "PowerShell", or "Command Prompt"</li>
-                        <li>Alternatively, press <span class="inline code">Win + R</span>, type "cmd" or "powershell", and press Enter</li>
+                        <li>Or, Press <span class="inline code jetbrains-mono-code"> <i class='bx bxl-windows bx-flip-vertical' style='color:#357ec7'></i>+ X</span> and select "Windows Terminal", "PowerShell", or "Command Prompt"</li>
+                        <li>Alternatively, press <span class="inline jetbrains-mono-code code"> <i class='bx bxl-windows bx-flip-vertical' style='color:#357ec7'></i>+ R</span>, type "cmd" or "powershell", and press Enter</li>
                     </ul>
                 </li>
                 <li>Navigate to your desired installation directory:
-                    <p class="code"><code>cd C:\Path\To\Your\Preferred\Directory</code></p>
+                    <p class="code jetbrains-mono-code"><code>cd C:\Path\To\Your\Preferred\Directory</code></p>
                     <p>Replace the path with your preferred installation location.</p>
                 </li>
                 <li>Clone the repository:
-                    <p class="code"><code>git clone https://github.com/HimalEranganaOfficial/Python-Package-Upgrader.git</code></p>
+                    <p class="code jetbrains-mono-code"><code>git clone https://github.com/HimalEranganaOfficial/Python-Package-Upgrader.git</code></p>
                     <p>This command creates a new folder containing all source files.</p>
                 </li>
                 <li>Navigate into the project directory:
-                    <p class="code"><code>cd Python-Package-Upgrader</code></p>
+                    <p class="code jetbrains-mono-code"><code>cd Python-Package-Upgrader</code></p>
                 </li>
                 <li>Explore the source code:
                     <ul>
@@ -186,7 +186,7 @@
             <p>In the next section, we'll explore the core features of Python Package Upgrader and how to use them effectively.</p>
         </section>
         <section id="Core_Features" class="main-section">
-            <header><h1>Core Features</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Core Features</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader streamlines Python package management through an intuitive graphical interface. This section explores each core feature in detail, explaining how they work and when to use them.</p>
             <h2>Package Update System</h2>
             <h3>The "Update All" Button</h3>
@@ -202,17 +202,17 @@
             <h3>The "Create a Backup" Button</h3>
             <p>The backup system employs a sophisticated yet storage-efficient approach to preserve your current package configuration. When you create a backup:</p>
             <ol type="1">
-                <li>The application executes an operation similar to the <span class="code inline">pip freeze</span> command, gathering information about all installed packages</li>
+                <li>The application executes an operation similar to the <span class="code jetbrains-mono-code inline">pip freeze</span> command, gathering information about all installed packages</li>
                 <li>It captures each package's name and exact version number</li>
                 <li>This information is encoded using base64 encryption for efficient storage</li>
-                <li>The backup is saved as a <span class="inline code">bkp.hsup</span> file, which requires minimal storage space</li>
+                <li>The backup is saved as a <span class="inline code jetbrains-mono-code">bkp.hsup</span> file, which requires minimal storage space</li>
             </ol>
             <p>The backup system is efficient because it stores only the essential information needed to recreate your environment, rather than the actual package files. This is possible because PyPI maintains all previous versions of packages, allowing for precise version-specific installations later.</p>
             <h2>Package Restoration</h2>
             <h3>The "Install Packages (Via Backup)" Button</h3>
             <p>This feature allows you to restore your Python environment from a previous backup. When you use this option:</p>
             <ol type="1">
-                <li>The application reads the encrypted backup file <span class="code inline">bkp.hsup</span></li>
+                <li>The application reads the encrypted backup file <span class="code jetbrains-mono-code inline">bkp.hsup</span></li>
                 <li>Decodes the stored package information</li>
                 <li>Installs each package at the exact version specified in the backup</li>
                 <li>Provides progress feedback during the restoration process</li>
@@ -256,7 +256,7 @@
                 <li><span class="bold">Storage Efficiency</span>
                     <ul>
                         <li><span class="thin">Backups store only version information, not package contents</span></li>
-                        <li><span class="thin">The <span class="code inline">bkp.hsup</span> file format minimizes storage requirements</span></li>
+                        <li><span class="thin">The <span class="code jetbrains-mono-code inline">bkp.hsup</span> file format minimizes storage requirements</span></li>
                         <li><span class="thin">PyPI integration enables precise version control without local storage overhead</span></li>
                     </ul>
                 </li>
@@ -279,7 +279,7 @@
             <p>In the next section, we'll explore the user interface in detail and learn how to navigate these features efficiently.</p>
         </section>
         <section id="User_Interface_Guide" class="main-section">
-            <header><h1>User Interface Guide</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>User Interface Guide</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader features a straightforward interface designed for ease of use. While the main action buttons have been covered in the Core Features section, this guide will focus on additional interface elements that help you monitor and understand the application's operation.</p>
             <h2>Activity Logging Area</h2>
             <ol>
@@ -297,7 +297,7 @@
                 <li>Track the sequence of performed actions</li>
             </ul>
             <p>Example log entries might show:</p>
-            <p><span class="code"><code>Program successfully launched @ 2025-02-14 12:19:59.428692.<br />
+            <p><span class="code jetbrains-mono-code"><code>Program successfully launched @ 2025-02-14 12:19:59.428692.<br />
                 Started creating a backup file @ 2025-02-14 12:20:17.447001.<br />
                 Created a backup file successfully...! @ 2025-02-14 12:20:40.551114.</code></span>
             </p>
@@ -321,10 +321,10 @@
             <p class="note"><i class='bx bxs-bell-ring bx-tada' style='color:#ff0000' ></i> <span class="bold">Note</span>: For comprehensive information beyond what these buttons provide, users should refer to this technical documentation.</p>
         </section>
         <section id="Working_with_Backups" class="main-section">
-            <header><h1>Working with Backups</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Working with Backups</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader uses an efficient backup system to store your package configurations. Understanding how these backups work will help you manage your Python environments effectively.</p>
             <ul>
-                <li><span class="bold">File Name</span>: All backups are saved as <span class="inline code">bkp.hsup</span></li>
+                <li><span class="bold">File Name</span>: All backups are saved as <span class="inline code jetbrains-mono-code">bkp.hsup</span></li>
                 <li><span class="bold">Format</span>: <a href="#base64_text" rel="noopener" target="_blank">Base64 encoded</a> text file</li>
                 <li><span class="bold">Content</span>: Contains package names and their exact version numbers</li>
                 <li><span class="bold">Size</span>: Minimal storage footprint due to efficient encoding</li>
@@ -332,7 +332,7 @@
             <p class="note"><i class='bx bxs-bell-ring bx-tada' style='color:#ff0000' ></i> <span class="bold">Note</span>: While the backup file content is encoded, it's not encrypted for security purposes - it's encoded for efficient storage and transfer.</p>
         </section>
         <section id="Package_Management_Process" class="main-section">
-            <header><h1>Package Management Process</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Package Management Process</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader streamlines package management by automating interactions with <a href="https://packaging.python.org/en/latest/tutorials/installing-packages/#installing-packages" rel="noopener" target="_blank">pip (Python's package installer)</a>. Here's how the application manages your packages internally.</p>
             <h2>Update Process</h2>
             <p>When updating packages, the application:</p>
@@ -345,7 +345,7 @@
             <h2>Installation Process</h2>
             <p>During package installation from backup:</p>
             <ol type="1">
-                <li>Reads the <span class="code inline">bkp.hsup</span> file</li>
+                <li>Reads the <span class="code jetbrains-mono-code inline">bkp.hsup</span> file</li>
                 <li>Decodes package information</li>
                 <li>Uses pip to install each package at the specified version</li>
                 <li>Maintains dependency compatibility</li>
@@ -368,7 +368,7 @@
             </ul>
         </section>
         <section id="Error_Handling_and_Troubleshooting" class="main-section">
-            <header><h1>Error Handling and Troubleshooting</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Error Handling and Troubleshooting</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader includes comprehensive error handling to help you identify and resolve issues that may arise during operation. This section covers common operational problems and their solutions.</p>
             <h2>Common Issues and Solutions</h2>
             <h3>Network-Related Issues</h3>
@@ -406,7 +406,7 @@
                     </span>
                 </li>
             </ol>
-            <p class="note"><i class='bx bxs-bell-ring bx-tada' style='color:#ff0000' ></i> <span class="bold">Note</span>: Always make a copy of your <span class="inline code">bkp.hsup</span> file if you need to reinstall the application. This file contains your package backup and should be preserved.</p>
+            <p class="note"><i class='bx bxs-bell-ring bx-tada' style='color:#ff0000' ></i> <span class="bold">Note</span>: Always make a copy of your <span class="inline jetbrains-mono-code code">bkp.hsup</span> file if you need to reinstall the application. This file contains your package backup and should be preserved.</p>
             <h2>Getting Help</h2>
             <p>If you encounter issues not covered here:</p>
             <ol>
@@ -416,7 +416,7 @@
             </ol>
         </section>
         <section id="Advanced_Usage" class="main-section">
-            <header><h1>Advanced Usage</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Advanced Usage</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <div class="alert">
                 <p><span class="soft-outline"><i class='bx bxs-bulb bx-tada' style='color:#ffff00' ></i></span> <span class="bold">Alert</span>: Python Package Upgrader is actively being developed with new advanced features planned for future releases. These will include enhanced configuration options, additional backup management features, and more sophisticated package handling capabilities.</p>
                 <p><em>To stay updated with the latest features and improvements:</em></p>
@@ -427,7 +427,7 @@
             </div>
         </section>
         <section id="Security_Considerations" class="main-section">
-            <header><h1>Security Considerations</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Security Considerations</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>Python Package Upgrader is built with transparency and security in mind. This section outlines important security aspects of the application.</p>
             <h2>Open Source Transparency</h2>
             <ul>
@@ -445,12 +445,12 @@
             <ul>
                 <li>All packages are downloaded directly from official PyPI servers</li>
                 <li>Package integrity is verified during installation</li>
-                <li>Backup files <span class="code inline">bkp.hsup</span> use Base64 encoding for compatibility, not for security - treat them as plain text</li>
+                <li>Backup files <span class="code jetbrains-mono-code inline">bkp.hsup</span> use Base64 encoding for compatibility, not for security - treat them as plain text</li>
             </ul>
             <p class="note"><i class='bx bxs-bell-ring bx-tada' style='color:#ff0000' ></i> <span class="bold">Note</span>: While the application is designed to be secure, always follow your organization's security policies when installing and updating Python packages.</p>
         </section>
         <section id="Contributing_Guide" class="main-section">
-            <header><h1>Contributing Guide</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Contributing Guide</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>We welcome contributions to Python Package Upgrader! Whether you're interested in fixing bugs, adding features, or improving documentation, here's how you can help.</p>
             <ul>
                 <li>Report bugs and suggest features through <a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader/issues" rel="noopener" target="_blank">GitHub Issues</a></li>
@@ -460,7 +460,7 @@
             </ul>
             <h2>Getting Started</h2>
             <ol type="1">
-                <li><a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader/fork" rel="noopener" target="_blank"><i class='bx bx-git-repo-forked bx-flashing' style='color:#223eaa' ></i> Fork</a> the repository</li>                <li></li>
+                <li><a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader/fork" rel="noopener" target="_blank"><i class='bx bx-git-repo-forked bx-flashing' style='color:#223eaa' ></i> Fork</a> the repository</li>
                 <li>Clone your fork locally</li>
                 <li>Create a new branch for your changes</li>
                 <li>Make your improvements</li>
@@ -472,10 +472,10 @@
                 <li>Contact the developer at <a href="https://linktr.ee/himalerangana" rel="noopener" target="_blank">https://linktr.ee/himalerangana</a></li>
                 <li>Ask questions through GitHub discussions</li>
             </ul>
-            <p><i class='bx bxs-wink-smile bx-fade-left' style='color:#d6d635'></i> We appreciate your interest in improving Python Package Upgrader!</p>
+            <p><i class='bx bxs-game bx-fade-left' style='color:#00ff25'></i></i> We appreciate your interest in improving Python Package Upgrader!</p>
         </section>
         <section id="Reference" class="main-section">
-            <header><h1>Reference</h1><span class="hash-link">#</span></header>
+            <header class="section-header inter-header inline"><h1><span>Reference</span><span class="hash-link"><i class='bx bx-link bx-tada' style='color:#444444' ></i></span></h1></header>
             <p>This final section provides essential resources and references for Python Package Upgrader users.</p>
             <h2>Official Resources</h2>
             <ul>
@@ -486,17 +486,19 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="col-9">
         <div id="footer-cls1">
             <div class="Logo" id="footerlogo">
                 <img src="/images/logo-large.jpg" alt="PPU Logo" id="logoimg">
-                <div id="logotext" class="squada-one-regular">Python Package Upgrader (PPU)</div>
+                <div id="logotext" class="squada-one-regular">Python Package Upgrader (PPU)<br/></div>
             </div>
         </div>
         <div id="footer-cls2">
-            <p>Your <i class='bx bxl-python bx-tada' style='color:#0a0d2f'  ></i> package management simplified. Visit <a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader" rel="noopener" target="_blank">GitHub Repository</a> | <a href="https://linktr.ee/himalErangana" rel="noopener" target="_blank">Developer Contact</a> | Legal | Privacy</p>
+            <p>Your <i class='bx bxl-python bx-tada' style='color:rgb(255, 255, 20)'  ></i> package management simplified. Visit <a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader" rel="noopener" target="_blank">GitHub Repository</a> | <a href="https://linktr.ee/himalErangana" rel="noopener" target="_blank">Developer Contact</a> | Legal | Privacy</p>
+            <a id="patreon" href="https://www.patreon.com/bePatron?u=87597167" rel="noopener" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
             <p>&copy; 2023-2025 Python Package Upgrader. Content available under <a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader/blob/main/LICENSE" rel="noopener" target="_blank">GNU General Public License v3.0</a>. Portions of this content are &copy;2023-2025 by <a href="https://github.com/HimalEranganaOfficial/Python-Package-Upgrader/graphs/contributors" rel="noopener" target="_blank">individual contributors.</a></p>
         </div>
     </footer>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="HimalErangana" data-description="Support me on Buy me a coffee!" data-message="Did you find this content useful?" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>
