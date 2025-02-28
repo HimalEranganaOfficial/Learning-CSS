@@ -1,0 +1,9 @@
+This is the first version of my personal Portfolio site.
+
+Technologies I used to this project;
+1. HTML5
+2. CSS3
+
+This is an Un-finished ptoject. I faced some performance issues with this site because, I put lots of CSS animations there and rendering them was a hard thing to do for low-end PCs.
+
+And, I discovered about CSS Scroll-Driven animations and I wanted to use in a new project.
