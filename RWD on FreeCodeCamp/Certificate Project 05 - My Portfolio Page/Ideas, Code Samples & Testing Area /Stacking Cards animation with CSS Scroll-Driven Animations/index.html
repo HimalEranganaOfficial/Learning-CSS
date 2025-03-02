@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 01 - CSS Scroll Driven Animations</title>
+    <meta name="author" content="Himal Erangana">
+    <meta name="description" content="This is a testing code sample for demonestration of a slide-able card stack animation wich is only made with CSS-Scroll-Driven-Animations that used in the Portfolio section of https://HimalEranganaOfficial.github.io">
+    <meta name="keywords" content="Scroll-Driven, Animation, Without JS,CSS3, HTML5, HTML, CSS, Himal Erangana, Testing, Test 01, 01, GitHub, Git, GitHub Activity, Activity">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75062604e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="css-anime-support-message">
+        <h1><i class="fa-solid fa-triangle-exclamation fa-shake" style="color: #ff0000;"></i>&nbsp;Warning…!</h1>
+        <p>Regrettably, it appears your browser lacks support for the refined elegance of CSS scroll animations. Should you be employing a Chromium-based/Firefox-based* browser, I kindly suggest updating it to the latest version. Alternatively, you might consider installing a distinguished <a href="https://www.chromium.org/Home/" rel="noopener noreferrer" target="_parent">Chromium-based</a> option, such as <a href="https://www.google.com/chrome/next-steps.html?statcb=1&installdataindex=empty&defaultbrowser=0#" rel="noopener noreferrer" target="_parent">Chrome</a>, <a href="https://brave.com/download/" rel="noopener noreferrer" target="_parent">Brave</a>, or <a href="https://arc.net/" rel="noopener noreferrer" target="_parent">Arc</a>, to elevate your browsing experience.</p>
+        <p><span class="ubuntu-mono-regular"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations" rel="noopener noreferrer" target="_blank">* - Firefox has limited CSS scroll animation support…!</a></span></p>
+    </div>
+    <div id="welcome">
+    <h1>Stack cards animation</h1>
+    <ul id="dl-list">
+        <li>Download the index.html file</li>
+        <li>Download the styles.css file</li>
+    </ul>
+    </div>
+    <ul id="tiles">
+        <li class="tile" id="tile1">
+            <div class="tile__content">
+                This is "#tile1"
+            </div>
+        </li>
+        <li class="tile" id="tile2">
+            <div class="tile__content">
+                This is "#tile2"
+            </div>
+        </li>
+        <li class="tile" id="tile3">
+            <div class="tile__content">
+                This is "#tile3"
+            </div>
+        </li>
+        <li class="tile" id="tile4">
+            <div class="tile__content">
+                This is "#tile4"
+            </div>
+        </li>
+    </ul>
+    <div id="x"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium lorem lectus. Phasellus vel ante at libero rhoncus tristique sed at purus. Maecenas finibus arcu sed metus sagittis, quis vehicula orci mollis. Aenean consequat, dui a aliquam tristique, massa magna accumsan libero, non ullamcorper neque purus ac neque. Ut et aliquet odio. Suspendisse tempor nunc ac justo fermentum varius. Ut eget purus eget nisi consectetur euismod. Duis sed lacus ac justo feugiat suscipit a nec sapien. Nulla facilisis tellus facilisis, luctus mauris in, faucibus tellus. Fusce bibendum est dui, vel viverra dui volutpat vitae. Pellentesque laoreet id erat dictum auctor. Nam lobortis cursus purus sed efficitur.</p>
+    <p>Proin sollicitudin mauris vel erat tempus, sed aliquam sem iaculis. Integer ac magna a neque volutpat fringilla sit amet eu nisl. Nam tristique enim id enim euismod condimentum. Quisque quis urna ex. Praesent egestas dapibus nunc a facilisis. Pellentesque tellus lacus, ornare eget auctor et, maximus at tortor. Quisque condimentum libero purus, gravida fermentum leo vehicula in. Aenean eget elit finibus, vestibulum nisi ut, semper leo. Nam nec porttitor diam. Donec vel tellus ac ex dapibus mattis.</p>
+    <p>Pellentesque interdum felis sed ante aliquam, sit amet finibus nibh dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et est ligula. Nunc condimentum vulputate nisl sit amet pharetra. Nam sit amet blandit enim. Nulla ultrices risus nisi, at aliquet turpis ullamcorper et. Nulla leo eros, fermentum eu sapien sit amet, facilisis pellentesque massa. Mauris sollicitudin sapien at tortor hendrerit pulvinar. Curabitur tellus erat, pulvinar non metus sed, tristique pulvinar ante. Curabitur scelerisque elit urna, nec pharetra magna tempor vitae. Nunc in sollicitudin mi. Nullam faucibus mollis mauris sit amet mattis. Quisque posuere lorem est, a interdum nibh semper vel. Curabitur at nisi odio.</p>
+    <p>Aenean ut mi fringilla tellus pulvinar malesuada nec sit amet sem. Morbi elementum ultrices euismod. Curabitur imperdiet, magna ut maximus elementum, arcu arcu tincidunt mauris, nec cursus tellus dolor tincidunt justo. Sed commodo facilisis orci aliquet ornare. Vestibulum id dui magna. Sed scelerisque facilisis sapien, et consectetur erat aliquam sit amet. Fusce vestibulum tristique sagittis. Integer cursus ultricies rhoncus. Aliquam auctor tellus in cursus cursus. Quisque ut lorem posuere, rutrum elit id, imperdiet quam. Vivamus lobortis erat id urna porttitor, eget scelerisque sem venenatis. Aliquam nec libero interdum, laoreet nibh eget, semper mi. Maecenas blandit placerat elementum. Etiam quis auctor urna. Nullam pretium ante a tortor consectetur pulvinar. Etiam sit amet ornare tortor.</p>
+    <p>Sed ut sapien eget massa vulputate laoreet in eu urna. Aenean aliquam maximus odio nec dapibus. Aenean egestas erat sed ante semper iaculis. Maecenas eu mollis dolor. Phasellus venenatis risus sed tempus cursus. Integer id mattis leo. Suspendisse potenti. Quisque eu ultricies neque, non aliquet erat.</p>
+    <p>Curabitur metus nisl, ornare quis vulputate id, dictum laoreet turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae leo sit amet magna aliquet lobortis vitae in elit. Sed in purus vitae nibh rutrum egestas. Maecenas eu turpis ornare, rhoncus dolor at, finibus libero. Mauris mattis iaculis odio ac laoreet. Donec dictum hendrerit elementum. Vestibulum pellentesque eros vitae augue blandit convallis. Integer ex massa, vulputate eget nibh sed, accumsan posuere nibh. Donec ac porttitor risus. Proin eu ornare risus, eget laoreet quam. Cras arcu nisi, hendrerit a metus et, aliquet eleifend quam. Pellentesque sit amet augue dictum, facilisis lorem varius, posuere lectus. Maecenas tempus ornare enim, et fermentum metus finibus non. Quisque scelerisque egestas lacinia.</p>
+    <p>Vestibulum viverra et est venenatis lacinia. Cras quam enim, faucibus quis dapibus eget, malesuada vel erat. Fusce eget semper dolor. Phasellus nec maximus leo. Aenean ante ligula, placerat vitae fringilla ut, semper eget ipsum. Morbi diam nibh, vulputate tempor odio nec, vulputate maximus augue. Donec vulputate nibh nec mi ultricies, quis dapibus elit semper. Nullam vel lorem feugiat, lacinia ante eget, iaculis nisi. Nunc scelerisque, ante vitae vehicula placerat, ante massa dictum augue, id sagittis diam augue sit amet nunc. Proin eu faucibus nibh. Suspendisse varius eget turpis nec bibendum. Phasellus sit amet laoreet ligula. Nunc tristique neque ac varius feugiat. Aliquam vehicula pretium nulla vel tempus. Nullam vel nibh et tellus commodo condimentum at a nibh.</p>
+    <p>Proin congue felis sed placerat fermentum. Pellentesque volutpat ex in interdum mollis. Morbi ac libero dolor. Mauris pretium augue ac urna eleifend, ac vestibulum enim cursus. Nulla laoreet velit vitae rutrum aliquam. Suspendisse tincidunt dictum mauris, eget varius augue hendrerit id. Fusce non imperdiet erat, id consequat odio. Quisque nec leo quis ante hendrerit facilisis eget eget tortor. Quisque sit amet aliquet lacus, vitae dignissim velit. Donec imperdiet luctus nibh, et blandit urna mattis sit amet. Aenean quis efficitur dolor. Praesent facilisis viverra elit ut pellentesque. Praesent a diam et nisi posuere rhoncus.</p>
+    <p>Nunc faucibus pulvinar massa, a eleifend nisi. Donec luctus consequat aliquam. Nulla in sem nunc. Ut quis velit imperdiet risus bibendum feugiat. Aliquam elit turpis, ultrices in sagittis egestas, auctor nec quam. Vivamus rhoncus nunc sed lectus cursus ultricies. Proin a quam sit amet nulla volutpat pulvinar.</p>
+    <p>Phasellus cursus tempor ipsum id vestibulum. Phasellus aliquam enim ac nisi fringilla lacinia. In rhoncus volutpat mi id semper. Duis a faucibus augue, in accumsan dolor. Suspendisse id ultricies dui. Donec eget varius turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt lectus id arcu placerat, eget sollicitudin dui iaculis. Donec nunc dui, dapibus ac gravida in, tempus at diam.</p>
+    <p>Phasellus non malesuada nisi. Cras et nulla non magna mollis vehicula ut vel nulla. Nunc auctor volutpat sollicitudin. Curabitur et dolor hendrerit, bibendum velit eget, lacinia velit. Proin eu porta lorem, non mattis nisi. Vestibulum nisi velit, ultrices sit amet laoreet sit amet, posuere ac turpis. Cras sit amet pulvinar ante. Aliquam a dui et lorem lacinia gravida a vitae diam. Duis id elit tristique turpis interdum porta. Nunc fermentum felis et nisl ultrices, varius blandit magna bibendum. Proin placerat dictum sagittis.</p>
+    <p>Aliquam dignissim sit amet odio nec faucibus. Vestibulum id lacus ipsum. Nam sagittis dapibus dui quis facilisis. Sed cursus ac sem et dapibus. Donec orci erat, finibus vel fermentum in, pellentesque in ex. Fusce tempus sed sapien tempus feugiat. Sed tempor facilisis nunc vel scelerisque. Duis euismod at ex vel lacinia. Fusce sed egestas lectus, eget iaculis libero. Aliquam ornare pretium libero, nec imperdiet libero pretium ac. Aenean ultricies turpis eget enim iaculis, vel tempus libero molestie. Sed hendrerit iaculis tortor. Etiam sit amet pulvinar purus, nec tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Fusce aliquet hendrerit purus, eu tristique metus. Quisque porttitor, lacus in mattis venenatis, metus nisi accumsan odio, et dapibus ligula tortor nec nisi. Nullam lobortis ipsum nec commodo fringilla. Phasellus molestie eros at lorem commodo hendrerit. Vestibulum tincidunt lacus in odio fringilla pellentesque. Ut euismod pharetra libero pulvinar posuere. Proin ac ante risus. Curabitur euismod tellus diam, non aliquam est interdum eget. Suspendisse maximus, augue id tincidunt lobortis, odio eros vestibulum neque, ut vulputate nunc massa at augue. Maecenas et aliquet felis. Nunc lobortis est non tincidunt pellentesque. Nunc rutrum sapien et sapien mattis porttitor. Aenean pellentesque dui sit amet viverra fringilla. Fusce pharetra ante quis augue gravida, consequat sollicitudin magna dignissim. Sed sed dignissim quam, quis dignissim justo.</p>
+    <p>Proin ullamcorper eget nunc sit amet porta. Aenean et dolor malesuada, scelerisque risus sed, dignissim lorem. Nulla eros tortor, lacinia sed egestas eu, viverra nec velit. Vivamus eget eros a eros consectetur aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dolor dui. Aliquam vestibulum, ligula quis eleifend pulvinar, risus massa laoreet orci, vitae mattis dolor nibh nec nibh. Morbi quis urna sed tortor viverra commodo. Ut dictum lacus vel nisl sollicitudin, at ultrices odio tempus.</p>
+    <p>Curabitur odio mauris, elementum sit amet dui eu, vulputate dignissim ipsum. Donec luctus quam sed quam venenatis vestibulum. Cras augue erat, malesuada non hendrerit sed, vehicula sit amet ligula. Cras eleifend, augue a pharetra cursus, libero libero lacinia lacus, quis accumsan sapien nisl at mauris. Aliquam tincidunt neque eu congue vulputate. Maecenas metus felis, fringilla vel nisi non, vestibulum fringilla mi. Nunc ut mollis massa. Duis tristique ut felis ut venenatis. Sed condimentum vehicula orci id molestie. Sed suscipit risus enim, id tempor tellus iaculis nec. Sed id magna ac risus sagittis hendrerit. Aliquam erat volutpat. Donec finibus felis id urna scelerisque iaculis. Donec ornare, sapien at volutpat mollis, massa nisi commodo libero, ac luctus ex sem vel lectus.</p>
+    <p>Morbi tristique non felis quis elementum. Etiam sagittis ipsum ut cursus porta. Nunc sodales odio ullamcorper elit placerat, non aliquam lacus mattis. Etiam ut venenatis velit. In neque sapien, ultricies eget est vel, dictum mollis libero. Proin sed ultrices lorem. Proin ut porttitor elit. Integer a interdum nisi. In egestas velit et velit gravida, a faucibus ipsum aliquam. Quisque tristique ex justo, sed elementum ex aliquet et.</p>
+    <p>In in interdum dolor, eu tristique dolor. Mauris id nibh hendrerit, pretium nulla quis, tincidunt turpis. Nunc facilisis rutrum risus vitae faucibus. Mauris aliquet posuere feugiat. Sed viverra tortor eu rutrum finibus. Ut a ante porta magna ullamcorper sagittis. Aenean sit amet consectetur augue, ac volutpat purus. Duis cursus massa ac gravida vehicula. Phasellus ullamcorper eleifend augue, sit amet lobortis odio malesuada non.</p>
+    <p>Phasellus euismod placerat diam sollicitudin auctor. Nunc laoreet eros odio, a vehicula elit sollicitudin maximus. Sed blandit, eros ut congue vestibulum, nibh purus iaculis massa, quis eleifend elit lectus tincidunt felis. Nulla tincidunt velit sed ipsum gravida, maximus ornare nisl viverra. Aliquam rutrum fermentum sapien, quis mollis massa eleifend vel. Vivamus aliquet dapibus metus. Aliquam risus odio, feugiat sagittis interdum dignissim, accumsan eget massa. Fusce vitae dui elementum lectus dignissim sagittis. Donec luctus sem finibus, pulvinar mi ac, accumsan quam. Cras finibus erat quis erat elementum scelerisque sit amet ac tortor. Sed finibus dapibus lorem non tristique.</p>
+</body>
+</html>
