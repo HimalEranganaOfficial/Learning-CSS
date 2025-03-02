@@ -1,7 +1,3 @@
-* {
-    outline:1px solid red;
-}
-
 @supports not (animation-timeline: view()) {
     body > #css-anime-support-message {
         display: grid;
