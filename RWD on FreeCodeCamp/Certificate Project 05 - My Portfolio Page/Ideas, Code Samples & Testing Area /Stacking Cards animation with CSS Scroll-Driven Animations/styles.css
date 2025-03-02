@@ -1,0 +1,204 @@
+* {
+    outline:1px solid red;
+}
+
+@supports not (animation-timeline: view()) {
+    body > #css-anime-support-message {
+        display: grid;
+        visibility: visible;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        place-content: center;
+        place-items: center;
+    }
+    * {
+        overflow: clip;
+    }
+}
+
+#css-anime-support-message {
+    z-index: -100;
+    display: none;
+    visibility: hidden;
+    background-color: #0d1117;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+}
+
+#css-anime-support-message h1 {
+    width: 100%;
+    font-size: 3rem;
+    color: #FF0000;
+    border: unset !important;
+}
+
+#css-anime-support-message p {
+    font-size: 1.5rem;
+}
+
+#css-anime-support-message a {
+    color: #ffffff;
+}
+
+#css-anime-support-message > p > span > a {
+    text-decoration: none;
+}
+
+#css-anime-support-message a:hover {
+    text-decoration: underline;
+    color:#dddddd;
+}
+
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    text-align: center;
+    width:100%;
+}
+  
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "sfp";
+    src: url("./SFPRODISPLAYREGULAR.OTF");
+}
+
+html {
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    font-family: "sfp",sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(90deg, red, orangered,orange,yellow,greenyellow,green, cyan,blue,indigo, magenta);
+    border-image-slice: 1;
+    text-transform: uppercase;
+}
+
+p {
+    width: 95%;
+    margin:auto;
+    text-align: justify;
+}
+
+:root {
+    --tile-height: 80vh;
+    --tile-margin: 6vh;
+    --tile-top-offset: 7vh;
+}
+
+#tiles {
+    /* Normal Styling */
+    position: relative;
+    min-height: max-content;
+    width: 85vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -moz-grid;
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    /* Scroll-driven animation */
+    --tiles-num: 4;
+    padding-bottom: calc(var(--tiles-num) * var(--tile-top-offset));
+    margin-bottom: var(--tile-margin);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--tiles-num), var(--tile-height));
+    row-gap: var(--tile-margin);
+    view-timeline-name: --tiles-element-scroll-in-body;
+}
+
+/* tile-number → t-number */
+#tile1 {
+    /* Scroll-driven animation */
+    --t-number:1;
+}
+#tile2 {
+    /* Scroll-driven animation */
+    --t-number:2;
+}
+#tile3 {
+    /* Scroll-driven animation */
+    --t-number:3;
+}
+#tile4 {
+    /* Scroll-driven animation */
+    --t-number:4;
+}
+
+.tile {
+    /* Normal Styling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Scroll-driven animation */
+    position: sticky;
+    top:0;
+    padding-top: calc(var(--t-number) * var(--tile-top-offset));
+    --t-number0: calc(var(--t-number) - 1);
+    --reverse-t-number: calc(var(--tiles-num) - var(--t-number0));
+    --reverse-t-number0: calc(var(--reverse-t-number) - 1);
+}
+
+.tile__content {
+    /* Normal Styling */
+    border-radius: 2rem;
+    width: 100%;
+    height: 80vh;
+    display: block;
+    place-content: center;
+    outline: invert;
+    /* Scroll-driven animation */
+    transform-origin: 50% 0%;
+    will-change: transform;
+    overflow: clip;
+    --start-range: calc(var(--t-number0) / var(--tiles-num) * 100%);
+    --end-range: calc(var(--t-number) / var(--tiles-num) * 100%);
+    animation: scale forwards linear;
+    animation-timeline: --tiles-element-scroll-in-body;
+    animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
+}
+
+#tile1 > .tile__content {
+    background-color: #7e3939;
+}
+
+#tile2 > .tile__content {
+    background-color: #7e7d39;
+}
+
+#tile3 > .tile__content {
+    background-color: #4c7e39;
+}
+
+#tile4 > .tile__content {
+    background-color: #39497e;
+}
+
+/* Scroll-driven animation */
+
+@keyframes scale {
+    to {
+        transform: scale(calc(1.1 - calc(0.1 * var(--reverse-t-number))));
+    }    
+}
